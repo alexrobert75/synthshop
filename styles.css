@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    z-index: 10;
+    border-right: 0.5px solid white;
+    
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul  {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    opacity: 0.9;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    margin: 1.8rem;
+}
+
+nav a:hover{
+    animation: 1s linear 0s infinite alternate glow;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 1px 1px 2px coral, 0px 0px 1em pink, 0px 0px 0.2em orange;
+    }
+    to {
+      text-shadow: 5px 4px 10px coral, 1px 2px 3em pink, 2px 5px 0.6em orange;
+    }
+}
+
+.logo {
+    width: 50%;
+    opacity: 0.8;
+}
+
+.banner {
+    background-color: purple;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    
+}
+
+
+video{ 
+    width: 100%;
+    object-fit: fill !important;
+}
+
+.content {
+    display: flex;
+    padding-left: 25%;
+    color: white;
+    margin: 3rem;
+    flex-direction: column;
+    align-items:baseline;
+}
+
+.synth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.synth h2,p {
+    flex-basis: 100%;
+}
+
+#technic {
+    flex-basis: 50%;
+}
+
+.synthpic {
+    flex-basis: 30%;
+    max-width: 40%;
+    border: 2px solid grey;
+}
+
+th,td {
+    padding: 0.5rem;
+}
+
+.content2 {
+    display: flex;
+    padding-left: 25%;
+    color: white;
+    margin: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+}
+
+.content2 h1,h2,h3,p,form {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+#aboutus {
+    justify-content: left;
+    align-items: center;
+}
+
+#aboutus h2,ol {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+#aboutus ol {
+    line-height: 2;
+    width: 30%;
+    flex-basis: 30%;
+    margin-right: 5rem;
+}
+
+.minisynth {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 25%;
+    height: auto;
+    margin: 2%;
+    display: flex;
+}
+
+.minisynth:before {
+    content: '';
+    display: block;
+    padding-top: 90%;
+}
+
+.minisynth a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.overlay p{
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.asr {
+    background-image: url("resources/synths/asr10.jpg");
+}
+
+.feedbacks  {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid white;
+}
+
+dt, dd {
+    line-height: 2;
+}
+
+dt {
+    font-weight: 900;
+}
+
+label, input {
+    margin: 0.6rem 0;
+}
