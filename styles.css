@@ -116,7 +116,6 @@ th,td {
     margin: 3rem;
     justify-content: center;
     flex-wrap: wrap;
-
     box-sizing: border-box;
 }
 
@@ -148,7 +147,7 @@ th,td {
     background-size: cover;
     flex-basis: 25%;
     height: auto;
-    margin: 2%;
+    margin: 1em;
     display: flex;
 }
 
