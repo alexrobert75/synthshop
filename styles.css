@@ -91,6 +91,14 @@ video{
     align-items: center;
 }
 
+
+@media only screen and (max-width: 720px){
+    
+    .synth {
+        justify-content: center;
+    }
+}
+
 .synth h2,p {
     flex-basis: 100%;
 }
@@ -103,6 +111,14 @@ video{
     flex-basis: 30%;
     max-width: 40%;
     border: 2px solid grey;
+}
+
+@media only screen and (max-width: 720px){
+    .synthpic {
+        flex-basis: 80%;
+        max-width: 90%;
+        margin-top: 1rem;
+    }
 }
 
 th,td {
@@ -119,9 +135,17 @@ th,td {
     box-sizing: border-box;
 }
 
+
 .content2 h1,h2,h3,p,form {
     flex-basis: 100%;
     width: 100%;
+}
+
+@media only screen and (max-width: 720px){
+    .content2 h1,h2,h3,p,form {
+        text-align: center;
+    }
+
 }
 
 #aboutus {
@@ -141,6 +165,20 @@ th,td {
     margin-right: 5rem;
 }
 
+@media only screen and (max-width: 720px){
+
+    #aboutus {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #aboutus ol {
+        width: 100%;
+        flex-basis: 100%;
+        margin-right: 2rem;
+    }
+}
+
 .minisynth {
     background-position: center;
     background-repeat: no-repeat;
@@ -149,6 +187,20 @@ th,td {
     height: auto;
     margin: 1em;
     display: flex;
+}
+
+@media only screen and (max-width: 880px){
+    .minisynth {
+        margin: 0.5em;
+        flex-basis: 40%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .minisynth {
+        margin: 0.5em;
+        flex-basis: 80%;
+    }
 }
 
 .minisynth:before {
