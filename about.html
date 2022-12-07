@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synthesizer shop - Our shop</title>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Zen+Dots&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.png" sizes="32x32"> 
-    <meta name="description" content="Available synths"> 
-    <meta name="author" content="Alexandre R"> 
-    <meta name="keywords" content="synth, shop, yamaha"> 
+
+    <head>
+
+        <!-- Technical metas -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Generic metas -->
+        <meta name="author" content="Alexandre R">
+        <meta name="description" content="Old synths shop, n°1 shop in New York for used music gear.">
+        <meta name="keywords" content="music,music gear,synth,synthesizers,samplers">
+        <meta name="Classification" content="Shop"> 
+    
+        <title>Old synth shop</title>
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Old synth shop">
+        <meta property="og:description" content="Old synths shop, n°1 shop in New York for used music gear.">
+        <meta property="og:image" content="assets/img/socialimage.jpg">
+    
+        <!-- Twitter -->
+        <meta property="twitter:title" content="Old synth shop">
+        <meta property="twitter:description" content="Old synths shop, n°1 shop in New York for used music gear.">
+        <meta property="twitter:image" content="assets/img/socialimage.jpg">
+    
+        <!-- Pinterest Claim -->
+        <meta name="p:domain_verify" content="Old synth shop">
+        
+        <!-- Links -->
+        
+        <!-- CSS External Files-->
+        <link href="core/styles.css" rel="stylesheet">
+        
+        <!-- Favicons (png, ico, svg...)-->
+        <link rel="icon" href="favicons/favicon16.png" sizes="16x16"> 
+        <link rel="icon" href="favicons/favicon.png" sizes="32x32"> 
+        <link rel="icon" href="favicons/Favicon96.png" sizes="96x96"> 
+        <link rel="icon" href="favicons/favicon128.png" sizes="128x128"> 
+        <link rel="icon" href="favicons/favicon228.png" sizes="228x228"> 
+        <link rel="shortcut icon" href="favicons/favicon196.png" sizes="196x196">
+        <link rel="apple-touch-icon" href="favicons/Favicon180.png" sizes="180x180"> 
+        
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Zen+Dots&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
-        <img class="logo" src="resources/logo.png" alt="logo-shop">
-        
+        <img class="logo" src="assets/logo.png" alt="logo-shop">
         <nav>
-            <ul>
+            <a id="link" href="#"><span id="burger"></span></a>
+            <ul class="navlist" id="mobilenav">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="machine.html">OUR SYNTHS</a></li>
                 <li><a href="about.html">ABOUT THE SHOP</a></li>
@@ -35,9 +71,9 @@
     </header>
 
     <main>
-    
+
         <div class="content2" id="aboutus">
-           
+
             <h1>More about us</h1>
             <h2>Why choose our shop?</h2>
 
@@ -53,19 +89,20 @@
                 <li>All our gear has a two years guarantee.</li>
             </ol>
 
-            <img class="synthpic" src="resources/shop.jpg" alt="the-shop">
+            <img class="synthpic" src="assets/shop.jpg" alt="the-shop">
 
             <p>We would be happy to welcome you at the shop from 9AM to 8PM all day except Sundays.</p>
-            
-            
-            
 
-            
-            
+
+
+
+
+
         </div>
-    
+
     </main>
 
-
+    <script src="core/app.js"></script>
 </body>
+
 </html>
