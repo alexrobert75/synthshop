@@ -1,9 +1,28 @@
+/* General style */
 body {
   margin: 0;
   font-family: "Big Shoulders Display", cursive;
   background-color: black;
 }
 
+header {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  z-index: 10;
+  border-right: 0.5px solid white;
+}
+
+/* Mobile nav */
 #burger {
   content: "";
   width: 1em;
@@ -45,23 +64,7 @@ body {
   background: white;
 }
 
-header {
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  z-index: 10;
-  border-right: 0.5px solid white;
-}
-
+/* Navbar */
 header a {
   color: white;
   text-decoration: none;
@@ -128,6 +131,7 @@ nav a:hover {
   opacity: 0.4;
 }
 
+/* HOME */
 .banner {
   background-color: purple;
   width: 100%;
@@ -152,17 +156,13 @@ video {
   align-items: baseline;
 }
 
+/* MACHINES */
 .synth {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-@media only screen and (max-width: 720px) {
-  .synth {
-    justify-content: center;
-  }
-}
 .synth h2, p {
   flex-basis: 100%;
 }
@@ -177,65 +177,6 @@ video {
   border: 2px solid grey;
 }
 
-@media only screen and (max-width: 720px) {
-  .synthpic {
-    flex-basis: 80%;
-    max-width: 90%;
-    margin-top: 1rem;
-  }
-}
-th, td {
-  padding: 0.5rem;
-}
-
-.content2 {
-  display: flex;
-  padding-left: 25%;
-  color: white;
-  margin: 3rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
-
-.content2 h1, h2, h3, p, form {
-  flex-basis: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 720px) {
-  .content2 h1, h2, h3, p, form {
-    text-align: center;
-  }
-}
-#aboutus {
-  justify-content: left;
-  align-items: center;
-}
-
-#aboutus h2, ol {
-  flex-basis: 100%;
-  width: 100%;
-}
-
-#aboutus ol {
-  line-height: 2;
-  width: 30%;
-  flex-basis: 30%;
-  margin-right: 5rem;
-}
-
-@media only screen and (max-width: 720px) {
-  #aboutus {
-    justify-content: center;
-    text-align: center;
-  }
-  #aboutus ol {
-    width: 100%;
-    flex-basis: 100%;
-    margin-right: 2rem;
-  }
-}
 .minisynth {
   background-position: center;
   background-repeat: no-repeat;
@@ -282,6 +223,44 @@ th, td {
   background-image: url("../assets/synths/asr10.jpg");
 }
 
+th, td {
+  padding: 0.5rem;
+}
+
+/* ABOUT */
+.content2 {
+  display: flex;
+  padding-left: 25%;
+  color: white;
+  margin: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.content2 h1, h2, h3, p, form {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+#aboutus {
+  justify-content: left;
+  align-items: center;
+}
+
+#aboutus h2, ol {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+#aboutus ol {
+  line-height: 2;
+  width: 30%;
+  flex-basis: 30%;
+  margin-right: 5rem;
+}
+
+/* PRODUCT PAGE */
 .feedbacks {
   padding: 1rem;
   margin: 1rem;
@@ -296,6 +275,7 @@ dt {
   font-weight: 900;
 }
 
+/* CONTACT */
 label, input {
   margin: 0.6rem 0;
 }
@@ -304,6 +284,7 @@ textarea {
   width: 80%;
 }
 
+/* RESPONSIVE */
 @media only screen and (max-width: 800px) {
   header {
     border: none;
@@ -358,5 +339,27 @@ textarea {
   .minisynth {
     margin: 0.5em;
     flex-basis: 80%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .synth {
+    justify-content: center;
+  }
+  .synthpic {
+    flex-basis: 80%;
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+  .content2 h1, h2, h3, p, form {
+    text-align: center;
+  }
+  #aboutus {
+    justify-content: center;
+    text-align: center;
+  }
+  #aboutus ol {
+    width: 100%;
+    flex-basis: 100%;
+    margin-right: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
