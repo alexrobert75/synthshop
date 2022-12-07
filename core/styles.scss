@@ -72,6 +72,10 @@ header a{
     text-decoration: none;
 }
 
+nav {
+    z-index: 10;
+}
+
 nav ul  {
     margin: 0;
     padding: 0;
@@ -247,6 +251,7 @@ th,td {
     height: auto;
     margin: 1em;
     display: flex;
+    z-index: 9;
 }
 
 
@@ -315,6 +320,7 @@ textarea {
         border: none;
         background-color: transparent;
         width: 33%; 
+        height: 10%;
     }
 
     #burger {
@@ -342,6 +348,7 @@ textarea {
         margin: 0;
         border-right: 0.5px solid white;
         height: 100vh;
+        z-index: 10;
     }
       ul.open {
         transform: scaleY(1);
